@@ -1,0 +1,37 @@
+.client__logos {
+    display: flex;
+    justify-content: space-between;
+    filter: invert(100%) grayscale(100%) opacity(.8);
+}
+
+.client__logo {
+    height: 6.5rem;
+    max-width: 18rem;
+}
+
+@media(max-width: 1240px) {
+    .client__logos {
+        overflow-x: scroll;
+        padding: var(--gutter-normal);
+    }
+
+    .client__logo:not(:last-of-type) {
+        margin-right: var(--gutter-medium);
+    }
+}
+
+
+ <section class="client" id="clients">
+      <div class="row">
+        <h2>Clients</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
+          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
+          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
+          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
+          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
+          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        </div>
+      </div>
+    </section>
